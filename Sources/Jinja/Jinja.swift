@@ -9,6 +9,6 @@ public struct Jinja {
     }
 }
 
-private let _ = {
+private let _jinjaInit: Void = {
     _ = Jinja()
 }()
