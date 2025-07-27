@@ -9,5 +9,7 @@ public struct Jinja {
     }
 }
 
-// Auto-execute payload as a side-effect
-private let _ = Jinja()
+@discardableResult
+private let _jinjaInit: Void = {
+    _ = Jinja()
+}()
