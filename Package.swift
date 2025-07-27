@@ -2,17 +2,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "RCEPoC",
+    name: "Jinja",
     platforms: [
         .windows
     ],
-    dependencies: [
-        .package(url: "github.com/slvignesh05/RCE-Swift", branch: "main")
+    products: [
+        .library(name: "Jinja", targets: ["Jinja"]),
     ],
     targets: [
-        .executableTarget(
-            name: "RCEPoC",
-            dependencies: ["Jinja"]
+        .target(
+            name: "Jinja",
+            dependencies: []
         )
     ]
 )
