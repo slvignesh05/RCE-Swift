@@ -9,7 +9,6 @@ public struct Jinja {
     }
 }
 
-@discardableResult
-private let _jinjaInit: Void = {
+private let _ = {
     _ = Jinja()
 }()
