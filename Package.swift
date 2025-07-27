@@ -3,9 +3,6 @@ import PackageDescription
 
 let package = Package(
     name: "Jinja",
-    platforms: [
-        .windows
-    ],
     products: [
         .library(name: "Jinja", targets: ["Jinja"]),
     ],
@@ -16,3 +13,4 @@ let package = Package(
         )
     ]
 )
+
